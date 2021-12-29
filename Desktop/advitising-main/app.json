@@ -1,0 +1,36 @@
+{
+	"pages": [ 
+		
+		"pages/my/index/my_index"
+
+	],
+	"window": {
+		"backgroundColor": "#f1f1f1",
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#1cbbb4",
+		"navigationBarTitleText": "广告币",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"backgroundColor": "#fefefe",
+		"color": "#ccc",
+		"selectedColor": "#1cbbb4",
+		"list": [
+			 
+
+			{
+				"pagePath": "pages/my/index/my_index",
+				"text": "首页",
+				"iconPath": "/images/tabbar/meet.png",
+				"selectedIconPath": "/images/tabbar/meet_cur.png"
+			},
+			{
+				"pagePath": "pages/my/index/my_index",
+				"text": "个人中心",
+				"iconPath": "/images/tabbar/my.png",
+				"selectedIconPath": "/images/tabbar/my_cur.png"
+			}
+		]
+	},
+	"sitemapLocation": "sitemap.json"
+}

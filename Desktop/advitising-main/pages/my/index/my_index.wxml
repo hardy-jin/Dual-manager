@@ -1,0 +1,116 @@
+<view class="main main-my-index main-{{skin}}">
+	<!--top area begin-->
+	<view class="user  bg-{{skin}}">
+		<view class="school-cover" style="background-image:url(http://www.code942.com/out/main.jpg"></view>
+		<view class="user-bar">
+			<!-- <view bindtap="bindAvatarTap" class="avatar round border-{{skin}}"  wx:if="{{user.USER_PIC}}">
+				<image model="aspectFit" class="avatar xl round bg-gray" src="{{user.USER_PIC}}"></image>
+				<view class="tag badge bg-red icon-female"  wx:if="{{user.USER_SEX==2}}"></view>
+				<view class="tag badge bg-blue icon-male"  wx:if="{{user.USER_SEX==1}}"></view>
+			</view> -->
+
+			<view class="avatar xl round bg-gray" catchtap="url" data-url="">
+				<open-data class="avatar-open" type="userAvatarUrl"></open-data>
+			</view>
+
+			<view class="detail">
+				<view class="name text-cut">
+					<open-data type="userNickName"></open-data>
+					<text class="text-s margin-left-xs">游戏ID:{{username}}</text></view>
+				<!-- <view class="desc">
+					<view  wx:if="{{user.USER_STATUS==1}}" class="tag small round bg-green">普通用户</view>
+					<view  wx:if="{{user.USER_STATUS==8}}" class="tag small round bg-yellow">VIP用户</view>
+					<view  wx:if="{{user.USER_STATUS==0}}" class="tag small round bg-red light">待审核用户</view> 
+				</view> -->
+			</view>
+
+			<!-- <view class="detail" wx:if="{{!user.USER_NAME}}" bindtap="url" data-url="/pages/reg/reg_step1">
+				<view class="name">注册 / 登录</view> 
+				<view class="desc"><view class="text-white">注册马上使用更多功能</view></view>
+			</view> -->
+		</view> 
+
+	</view>
+	<!--top area end-->
+
+	<!--down area begin-->
+	<view class="down">
+		<view class="data shadow-warp"> 
+			<view bindtap="url" data-url=""><text class="num">{{coin1}}</text><text class="txt">广告币1</text></view> 
+			<view bindtap="url" data-url=""><text class="num">0</text><text class="txt">广告币2</text></view>
+			<view bindtap="url" data-url=""><text class="num">0</text><text class="txt">广告币3</text></view>
+			<view bindtap="url" data-url=""><text class="num">0</text><text class="txt">广告币4</text></view>
+		</view>
+
+		<!--base begin -->
+		<view class="comm-list menu card-menu margin-top shadow radius">
+			<view class="item arrow" bindtap="changeName">
+				<view class="content">
+					<text class="icon-myfill item-icon text-olive"></text>
+					<text class="text-black">修改绑定用户名</text>
+				</view>
+			</view>
+
+		 
+		 
+
+			 
+		</view>
+		<!--base end -->
+
+	 
+
+		<!--act begin -->
+		<view class="comm-list menu card-menu margin-top shadow radius">
+			 
+
+			<view class="item arrow" bindtap="openAd">
+				<view class="content">
+					<text class="icon-newshotfill item-icon text-green"></text>
+					<text class="text-black">观看视频广告1</text>
+				</view>
+				{{0}}/100
+			</view>
+
+			 
+
+			<view class="item arrow" bindtap="openAd">
+				<view class="content">
+					<text class="icon-friendfill item-icon text-orange"></text>
+					<text class="text-black">观看视频广告2（未开放）</text>
+				</view>
+				{{coin2}}/100
+			</view>
+
+		 
+
+			<view class="item arrow" bindtap="openAd">
+				<view class="content">
+					<text class="icon-footprint item-icon text-blue"></text>
+					<text class="text-black">观看视频广告3（未开放）</text>
+				</view>
+				{{count3}}/100
+			</view>
+			
+			<view class="item arrow" bindtap="openAd">
+				<view class="content">
+					<text class="icon-newshotfill item-icon text-green"></text>
+					<text class="text-black">观看视频广告4（未开放）</text>
+				</view>
+				{{count4}}/100
+			</view>
+		 
+		</view>
+		<!--act end -->
+
+
+		<!--sys begin -->
+
+		<!--sys end -->
+
+	</view>
+	<!--down area end-->
+
+	
+</view>
+
